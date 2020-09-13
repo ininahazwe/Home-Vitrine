@@ -1,0 +1,45 @@
+/* Animation */
+
+section.animation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.cubes-container{
+    width: 50%;
+    height: 20vh;
+    animation-duration: 3s;
+    animation-name: cubes;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div{
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        margin: 5px;
+        animation: cubes 3s ease;
+    }
+    .cube{
+        img{
+            width: 100%;
+            filter: grayscale(50%);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cubes-container{
+        width: 80%;
+        margin-top: 90px;
+        height: 0vh;
+
+        div{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

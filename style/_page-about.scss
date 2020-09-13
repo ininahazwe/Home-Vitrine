@@ -1,0 +1,16 @@
+.head-about{
+  display: flex;
+  align-items: center;
+  padding: 12%;
+
+  .about-illustration{
+    flex: 1;
+
+    img{
+      width: 120%;
+    }
+  }
+  .about-textes{
+    flex: 1;
+  }
+}

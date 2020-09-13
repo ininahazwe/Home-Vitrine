@@ -1,0 +1,59 @@
+/* Premier */
+
+section.premier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    .title{
+        margin-top: 25vh;
+        width: 70%;
+        text-align: center;
+
+        h1.principal {
+            font-size: 4rem;
+            line-height: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-bottom: 20px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+    .hashtag {
+        font-size: 15px;
+        margin-bottom: 20px;
+
+        span{
+            font-weight: 600;
+
+            &::before{
+                content: '#';
+                color: #F07F22;
+            }
+        }
+    }
+    button.apply{
+        background-color: #083B4F;
+        color: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
+  
+  
+@media only screen and (max-width: 768px) {
+    section.premier {
+        height: 60vh;
+
+        .title{
+            h1.principal {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+  

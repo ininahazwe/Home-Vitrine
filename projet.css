@@ -1,0 +1,27 @@
+article {
+  display: flex;
+  padding: 5%;
+}
+article div {
+  padding: 20px;
+}
+.titres {
+  flex: 1;
+}
+.paragraphes {
+  flex: 2;
+  column-count: 2;
+  column-gap: 2em;
+  margin-top: 50px;
+}
+.gallery-photos {
+  flex: 1;
+  margin-top: 50px;
+}
+.gallery-photos img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}

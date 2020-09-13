@@ -1,0 +1,65 @@
+/* reseaux & Contact flottants */
+
+.trait {
+    border: 1px dotted #F07F22;
+    transform: rotate(90deg);
+    width: 50px;
+    margin: 4rem 0;
+}
+.reseaux{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 35% ;
+    left: 1%;
+}
+
+img.reseau{
+    color: #F07F22;
+    padding: 5px;
+    cursor: pointer;
+    filter: invert(60%) sepia(32%) saturate(4166%) hue-rotate(349deg) brightness(99%) contrast(90%);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 45% ;
+    right: 1%;
+    z-index: 99;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.contact p{
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+}
+
+#btn-close-modal .fas{
+    display: block;
+    font-size: 3rem;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .contact{
+        visibility: hidden;
+    }
+    .reseaux{
+        display: none;
+    }
+    .contact{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        flex-direction: row;
+    }
+}

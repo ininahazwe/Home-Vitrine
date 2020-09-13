@@ -1,0 +1,109 @@
+/* About*/
+
+section.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    .presentation, .infos-list{
+        width: 50%;
+        padding: 12%;
+    }
+} 
+
+.intro,
+.infos-list ul {
+  font-size: 18px;
+  font-weight: 100;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.infos-list ul {
+    position: relative;
+
+    li {
+      border-bottom: 1px dotted #7f7f7f;
+      padding-bottom: 13px;
+      margin-bottom: 10px;
+
+      &::after {
+        content: "\f063";
+        font-family: FontAwesome;
+        position: absolute;
+        right: 0;
+        }
+    }
+}
+
+button.learn {
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+/* Accordeon*/
+
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  color: #F07F22;
+}
+
+.accordion:after {
+  content: '\f01a';
+  font-family: 'FontAwesome';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\f01b';
+  font-family: 'FontAwesome';
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+    span{
+      margin-bottom: 10px;
+    }
+
+    a{
+      text-decoration: none;
+      color: var(--color1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  section.about{
+    position: relative;
+    display: inline;
+
+    .presentation, .infos-list{
+        display: block;
+        width: 100%;
+        padding: 6% 12%;
+        margin-top: 170px;
+    }
+    .presentation{
+      margin-top: 130px;
+    }
+    .infos-list{
+      margin-top: 10px;
+    }
+  } 
+}

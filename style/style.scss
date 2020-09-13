@@ -1,0 +1,99 @@
+:root{
+    --color1: #f07f22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 65%;
+}
+p {
+    color: #262626;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    overflow:hidden;
+    text-align:center;
+    margin-bottom: 22px;
+}
+
+.sdg-banner{
+    margin-top: 100px;
+    margin-bottom: 12px;
+    
+    img{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+}
+
+button {
+    height: 48px;
+    background: #f07f22;
+    color: #fff;
+    width: 148px;
+    outline: none;
+    border: none;
+    margin: auto;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(0.98);
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);;
+    } 
+
+    i {
+      margin-right: 5px;
+      color: #fff;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.4rem;    
+    }
+    .sdg-banner{
+        margin-top: 50px;
+        
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@import 'animation.scss';
+@import 'about.scss';
+@import 'editions.scss';
+@import 'flottant.scss';
+@import 'menu.scss';
+@import 'partners.scss';
+@import 'premier.scss';
+@import 'footer.scss';
+@import 'projects.scss';
+@import 'team.scss';
+@import 'contact.scss';
+@import 'mobile.scss';
+@import 'page-about.scss';
+
+
